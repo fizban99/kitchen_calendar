@@ -14,4 +14,6 @@ Once printed, just staple at the top and punch a hole at the bottom to be able t
 
 The template does not have pictures. Just tell your children to paint or glue their drawings on the back side of each month ;-)
 
-The configuration files are in the data folder. The html file can easily be saved as pdf using Chrome.
+The configuration files are in the data folder. You can configure the day and month names to match your language, the notes, and the holidays.
+
+The html file can easily be saved as pdf using Chrome.
