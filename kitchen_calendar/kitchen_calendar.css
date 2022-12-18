@@ -1,0 +1,206 @@
+/*
+A very basic CSS file (only positioning and basic coloring) for the kitchen template.
+*/
+
+/**********************************************************************
+* C O M M O N   S E T T I N G S
+**********************************************************************/
+/* for printing, tested with Chrome browser */
+@page {
+	margin: 0;
+	size: 297mm 210mm; /* should be the same as .page */
+}
+
+/* title page or week pages */
+.page {
+	position: relative;
+	width: 297mm; /* should be the same as @page */
+	height: 210mm; /* should be the same as @page */
+	 /* fit the background image to entire page */
+	page-break-after: always; /* helps printing */
+	margin: 0%;
+}
+
+/* default 0 margin, padding */
+* {
+	padding: 0px;
+	margin: 0;
+}
+
+/* default font */
+body {
+	font-family: Arial;
+	font-size: 12mm;
+}
+
+/**********************************************************************
+* T I T L E   P A G E
+**********************************************************************/
+/* position and size of title */
+#title {
+	position: relative;
+	top: 25%;
+	font-size: 400%;
+	/* centering */
+	width: 100%;
+	text-align: center;
+}
+
+/**********************************************************************
+* M O N T H S
+**********************************************************************/
+.month-description {
+	position: absolute;
+	top: 7%;
+	margin-left: 0%;
+	width: 100%;
+	text-align-last: center;
+	font-size: 200%;
+}
+
+.month-name {
+	display: inline-block;
+}
+
+.month-year {
+	display: inline-block;
+}
+
+/**********************************************************************
+* D A Y S
+**********************************************************************/
+.days {
+	position: absolute;
+	top: 18%;
+	width: 100%;
+	left: 1%;
+	height: 50%;
+	display: table;    
+}
+
+.day-weekday-name {
+	display: inline-block;
+	position:relative;
+	text-align: center;
+	text-align-last: center;
+	width: 14.2%;
+	border-bottom: solid 2pt #E6E6E6;
+	z-index: -1;
+	color: #bdbbbb;
+}
+
+.days-line {
+	display: table-row;
+	clear: both;
+	width: 100%;
+	font-size: 150%;
+	height: 23%;
+	text-align: justify;
+	text-align-last: justify;
+	border-style:solid;
+	border-width: 1pt;
+	border-color:#000000;
+}
+
+.days-line-1 {
+	display: table-row;
+	height: auto;
+	font-size: 80%;
+}
+
+
+.day-weekday-name.day-weekday-weekend {
+	color: red;
+}
+
+.day {
+	float: left;
+	display: table-column;
+	width: 14.1%;
+	height: 75pt;
+	text-align: left;
+	text-align-last: left;
+	vertical-align: top; /* vertical top alignment */
+	border: solid 1px transparent;
+	margin:-.5px;
+}
+
+.day-cell {
+	border:solid 1px #000000;
+	margin:-.5px;
+}
+.day-number {
+	margin-left: 2%;
+	margin-bottom: -6%;
+}
+
+.day-name-day {
+	font-size: 20%;
+}
+
+.day-public-holiday {
+	font-size: 20%;
+	margin-left: 2%;
+
+}
+
+.day-religious-holiday {
+	font-size: 20%;
+	font-style: italic;
+	color: darkgreen;
+}
+
+.day-sunday, .day-saturday {
+	color: red;
+	font-weight: bold;
+}
+
+.day-is-public-holiday {
+	color: red;
+	font-weight: bold;
+}
+
+.day-is-note .day-number {
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.day-note {
+	font-size: 20%;
+	color: blue;
+	font-style: italic;
+	margin-top: 5%;
+}
+
+
+body {
+	font-size: 10mm;
+}
+
+body {
+	font-size: 10mm;
+}
+
+body {
+	font-size: 10mm;
+}
+
+body {
+	font-size: 10mm;
+}
+
+body {
+	font-size: 10mm;
+}
+
+body {
+	font-size: 10mm;
+}
+
+body {
+	font-size: 10mm;
+}
+
+body {
+	font-size: 10mm;
+}
